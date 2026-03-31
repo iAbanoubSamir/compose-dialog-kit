@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DialogKit Sample</string>
+
+    <!-- Showcase screen -->
+    <string name="showcase_header">compose-dialog-kit</string>
+    <string name="showcase_subtitle">Beautiful, ready-made Compose dialogs</string>
+
+    <!-- Dialog labels -->
+    <string name="dialog_alert">Alert</string>
+    <string name="dialog_alert_desc">General info dialog</string>
+    <string name="dialog_warning">Warning</string>
+    <string name="dialog_warning_desc">Risky action prompt</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_delete_desc">Destructive confirmation</string>
+    <string name="dialog_app_update">App Update</string>
+    <string name="dialog_app_update_desc">New version available</string>
+    <string name="dialog_rate_app">Rate App</string>
+    <string name="dialog_rate_app_desc">Star rating prompt</string>
+    <string name="dialog_action_sheet">Action Sheet</string>
+    <string name="dialog_action_sheet_desc">Bottom sheet menu</string>
+    <string name="dialog_input">Input</string>
+    <string name="dialog_input_desc">Text input prompt</string>
+    <string name="dialog_success">Success</string>
+    <string name="dialog_success_desc">Animated checkmark</string>
+    <string name="dialog_error">Error</string>
+    <string name="dialog_error_desc">Failure with retry</string>
+    <string name="dialog_loading">Loading</string>
+    <string name="dialog_loading_desc">Blocking progress</string>
+    <string name="dialog_permission">Permission</string>
+    <string name="dialog_permission_desc">Permission rationale</string>
+    <string name="dialog_no_internet">No Internet</string>
+    <string name="dialog_no_internet_desc">Connectivity lost</string>
+    <string name="dialog_logout">Logout</string>
+    <string name="dialog_logout_desc">Session end confirm</string>
+</resources>

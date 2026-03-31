@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+**/build/
+
+# Local config — never commit
+local.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Signing — never commit keystores or secret property files
+*.keystore
+*.jks
+keystore.properties
+signing.properties
+
+# Kotlin build metadata
+.kotlin/
+
+# Native builds
+.externalNativeBuild/
+.cxx/
+
+# Profiling & captures
+captures/
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

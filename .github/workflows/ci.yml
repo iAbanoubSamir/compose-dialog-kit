@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, main, develop ]
+  pull_request:
+    branches: [ master, main, develop ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build library (release)
+        run: ./gradlew :compose-dialog-kit:assembleRelease
+
+      - name: Build sample app (debug)
+        run: ./gradlew :app:assembleDebug
+
+      - name: Upload library AAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: compose-dialog-kit-release
+          path: compose-dialog-kit/build/outputs/aar/compose-dialog-kit-release.aar
+          retention-days: 7
